@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://localhost/arbeit/css/style.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <title>call & filter list data  </title>
+</head>
+
+<body>
+  <header>
+    <h1>Die Film Und Ihre Drehorte</h1>
+  </header>
+  <br>
+  <section>
+    <form>
+      <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Finden Deinen Film ..">
+    </form>
+    <div class="row">
+      <table id="mytable">
+        <thead>
+          <tr>
+            <th>Titel</th>
+            <th>Jahr</th>
+            <th>Ort</th>
+          </tr>
+        </thead>
+      </table>
+    </div>
+  </section>
+  <footer>
+    <p>Liste der Filme und ihrer Drehorte in San Francisco</p>
+  </footer>
+  <div id="loader-wrapper">
+    <div id="loader"></div>
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+  </div>
+  <script src="http://localhost/arbeit/js/preloader.js"></script>
+  <script src="http://localhost/arbeit/js/Filter-data.js"></script>
+  <script src="http://localhost/arbeit/js/call-data-api.js"></script>
+</body>
+
+</html>
